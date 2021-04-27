@@ -22,7 +22,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="PlatformCenter" index="0"]
 
 input_pickable = false
-collision_layer = 1
+collision_layer = 2
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
@@ -46,7 +46,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="PlatformDown" index="0"]
 
 input_pickable = false
-collision_layer = 1
+collision_layer = 2
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
@@ -70,7 +70,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="PlatformRight" index="0"]
 
 input_pickable = false
-collision_layer = 1
+collision_layer = 2
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
@@ -94,7 +94,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="PlatformLeft" index="0"]
 
 input_pickable = false
-collision_layer = 1
+collision_layer = 2
 collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
