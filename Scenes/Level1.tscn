@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/TileSetPlatforms.tres" type="TileSet" id=3]
+[ext_resource path="res://Assets/Other/plantBlue_4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Other/plantGreen_4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Other/plantTop_red.png" type="Texture" id=6]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1" type="Node2D" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -36,5 +39,22 @@ collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -131053, 0, 0, -131052, 0, 0, -131051, 0, 0, -131050, 0, 0, -131049, 0, 0, 48, 0, 0, 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 65568, 0, 0, 65583, 0, 0, 131086, 0, 0, 131087, 0, 0, 131088, 0, 0, 131089, 0, 0, 131118, 0, 0, 196653, 0, 0, 196654, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262187, 0, 0, 262188, 0, 0, 262189, 0, 0, 327690, 3, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 2, 0, 327719, 0, 0, 327720, 0, 0, 327721, 0, 0, 327722, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 393240, 0, 0, 393247, 0, 0, 458757, 3, 0, 458758, 0, 0, 458759, 0, 0, 458760, 2, 0, 458783, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524319, 1, 0, 589824, 3, 0, 589825, 0, 0, 589826, 0, 0, 589827, 2, 0, 589835, 3, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 2, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 1, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 655360, 1, 0, 655361, 1, 0, 655362, 1, 0, 655363, 1, 0, 720902, 3, 0, 720903, 0, 0, 720904, 0, 0, 720905, 2, 0, 786438, 1, 0, 786439, 1, 0, 786440, 1, 0, 786441, 1, 0, 786448, 0, 0, 786449, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 0, 0, 786453, 0, 0, 786454, 0, 0, 786455, 0, 0 )
+
+[node name="DecorativeItems" type="Node2D" parent="." index="2"]
+
+[node name="plantBlue_4" type="Sprite" parent="DecorativeItems" index="0"]
+
+position = Vector2( 947.672, 455.834 )
+texture = ExtResource( 4 )
+
+[node name="plantGreen_4" type="Sprite" parent="DecorativeItems" index="1"]
+
+position = Vector2( 1504.18, 266.058 )
+texture = ExtResource( 5 )
+
+[node name="plantTop_red" type="Sprite" parent="DecorativeItems" index="2"]
+
+position = Vector2( 2056.79, 266.058 )
+texture = ExtResource( 6 )
 
 
